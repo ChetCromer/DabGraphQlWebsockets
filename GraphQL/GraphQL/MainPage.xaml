@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="GraphQL.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Server Address"/>
+        <Entry x:Name="txtServer" Text="wss://service.staging.dailyaudiobible.com" Placeholder="[Server Address]"/>
+        <Label Text="Protocol"/>
+        <Entry x:Name="txtProtocol" Text="graphql-ws" Placeholder="[WS Protcol]"/>
+        <Label Text="X-Token"/>
+        <Entry x:Name="txtToken" Text="" Placeholder="[Token]"/>
+        <Button Text="Connect"/>
+        <Label Text="Incoming Messages"/>
+        <Label x:Name = "lblIncoming" VerticalOptions="FillAndExpand" Text="..."/>
+        <Label Text="Send"/>
+        <Editor x:Name="txtCommand" Text="" Placeholder="[Command Text]"/>
+        <Button Text="Send"/>
+        <Button Text="Disconnect"/>
+    </StackLayout>
+</ContentPage>
